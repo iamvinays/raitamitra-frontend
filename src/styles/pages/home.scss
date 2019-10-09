@@ -1,0 +1,13 @@
+.homepage {
+    .trending-campaigns {
+        padding: 50px 0;
+        .slick-prev:before, .slick-next:before {
+            color: black;
+        }
+        .section-head {
+            color: #444444;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
