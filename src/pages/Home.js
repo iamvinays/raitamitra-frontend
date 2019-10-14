@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import CampaignCard from '../components/CampaignCard';
 import '../styles/pages/home.scss';
+// import Marquee from 'react-marquee';
 
 const sliderSettings = {
     dots: false,
@@ -48,6 +49,17 @@ const sliderSettings = {
 const Home = () => (
     <div className="homepage">
         <Banner bannerData={HomepageBanner} />
+		<marquee>
+			<strong>
+			DAP(ಡಿಎಪಿ), Urea(ಯೂರಿಯಾ), Potash(ಪೊಟಾಷ್), Micro Nutrient(ಮೈಕ್ರೋ ನ್ಯೂಟ್ರಿಯೆಂಟ್), Organic Manure(ಆರ್ಗಾನಿಕ್ ಮೆನ್ಯೂರ್), Chemical Fertilizers(ಕೆಮಿಕಲ್ ಫರ್ಟಿಲೈಸರ್ಸ್), Seeds(ಸೀಡ್ಸ್) with all Documentation from Certified Fertilizers only.
+			</strong>
+		</marquee>
+        {/* <Marquee 
+			text='DAP(ಡಿಎಪಿ), Urea(ಯೂರಿಯಾ), Potash(ಪೊಟಾಷ್), Micro Nutrient(ಮೈಕ್ರೋ ನ್ಯೂಟ್ರಿಯೆಂಟ್), Organic Manure(ಆರ್ಗಾನಿಕ್ ಮೆನ್ಯೂರ್), Chemical Fertilizers(ಕೆಮಿಕಲ್ ಫರ್ಟಿಲೈಸರ್ಸ್), Seeds(ಸೀಡ್ಸ್) with all Documentation from Certified Fertilizers only.'
+			hoverToStop={true}
+			loop={true}
+			trailing={0}
+        /> */}
         <div className="container">
             <section className="trending-campaigns">
                 <h1 className="section-head">Trending Campaigns</h1>

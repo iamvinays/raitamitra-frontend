@@ -1,24 +1,39 @@
-import React from 'react';
+import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
+import $ from 'jquery'; 
+import '../styles/components/header.scss';
 
-const Header = () => (
-    <nav className="navbar navbar-expand-sm bg-dark navbar-dark justify-content-end">
-        <Link className="navbar-brand" to="/">RaitaMitra</Link>
-        {/* <button className="btn btn-success ml-auto mr-1">Always Show</button> */}
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-            <ul className="navbar-nav text-right ml-auto">
-                <li className="nav-item active">
-                    <Link className="nav-link" to="/">Home</Link>
-                </li>
-                <li className="nav-item active">
-                    <Link className="nav-link" to="/products">Products</Link>
-                </li>
-            </ul>
-        </div>
-    </nav>
-);
+class Header extends Component {
+    componentDidMount() {
+		const showHeaderAt = 150;
+		const win = $(window), body = $('body');
+
+		if(win.width() > 600){
+			win.on('scroll', function(e){
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				} else {
+					body.removeClass('fixed');
+				}
+			});
+		}
+    }
+    render() {
+        return (
+            <header className="header-fixed">
+                <div className="header-limiter">
+                    <h1><Link to="#">Raita<span>Mitra</span></Link></h1>
+                    <nav>
+                        <Link to="#" className="selected">Home</Link>
+                        <Link to="#">Products</Link>
+                        <Link to="#">Campaigns</Link>
+                        <Link to="#">About</Link>
+                        <Link to="#">Contact</Link>
+                    </nav>
+                </div>
+            </header>
+        )
+    }
+}
 
 export default Header;
