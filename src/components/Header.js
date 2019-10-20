@@ -26,9 +26,6 @@ class Header extends Component {
                     <nav>
                         <Link to="#" className="selected">Home</Link>
                         <Link to="#">Products</Link>
-                        <Link to="#">Campaigns</Link>
-                        <Link to="#">About</Link>
-                        <Link to="#">Contact</Link>
                     </nav>
                 </div>
             </header>

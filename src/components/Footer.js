@@ -14,9 +14,6 @@ const Footer = () => (
             <ul className="list-inline">
                 <li className="list-inline-item"><Link to="#">Home</Link></li>
                 <li className="list-inline-item"><Link to="#">Products</Link></li>
-                <li className="list-inline-item"><Link to="#">Campaigns</Link></li>
-                <li className="list-inline-item"><Link to="#">About</Link></li>
-                <li className="list-inline-item"><Link to="#">Contact</Link></li>
             </ul>
             <p className="copyright">RaitaMitra © {new Date().getFullYear()}</p>
         </footer>

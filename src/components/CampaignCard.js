@@ -18,8 +18,8 @@ class CampaignCard extends Component {
                                 <h2>{this.props.title}</h2>
                                 <span className="created-by">- created by {this.props.createdBy}</span>
                                 <p className="intro">{this.props.intro}</p>
-                                <span className="raised"><strong>&#8377; {this.props.raised}</strong> Raised</span>
-                                <span className="supporters"><strong>{this.props.supporters}</strong> Supporters</span>
+                                {(this.props.raised !== '') ? <span className="raised"><strong>&#8377; {this.props.raised}</strong> Raised</span> : ``}
+                                {(this.props.supporters !== '') ? <span className="supporters"><strong>{this.props.supporters}</strong> Supporters</span> : ``}
                             </div>
                         </div>
                     </div>

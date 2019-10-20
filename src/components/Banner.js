@@ -16,7 +16,7 @@ class Banner extends Component {
                         <div className="inner">
                             <h1>{item.title}</h1>
                             <p>{item.description}</p>
-                            <button>{item.button}</button>
+                            {(item.button !== '') ? `<button>${item.button}</button>` : ``}
                         </div>
                     </div>
                 ))}

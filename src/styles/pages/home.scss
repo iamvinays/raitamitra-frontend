@@ -1,4 +1,22 @@
+@import url('//fonts.googleapis.com/css?family=Baloo+Tamma&display=swap'); // font-family: 'Baloo Tamma', cursive;
+@import url('//fonts.googleapis.com/earlyaccess/notosanskannada.css'); // font-family: 'Noto Sans Kannada', sans-serif;
+@import url('//fonts.googleapis.com/earlyaccess/notosanskannadaui.css'); // font-family: 'Noto Sans Kannada UI', sans-serif;
+
 .homepage {
+    .intro {
+        padding-top: 50px;
+        h2 {
+            font-family: 'Baloo Tamma', cursive;
+            text-align: center;
+            line-height: 2.5rem;
+            color: #444444;
+        }
+        p {
+            font-family: 'Noto Sans Kannada', sans-serif;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    }
     .trending-campaigns {
         padding: 50px 0;
         .slick-prev:before, .slick-next:before {

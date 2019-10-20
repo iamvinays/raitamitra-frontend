@@ -1,0 +1,29 @@
+.marquee {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    overflow: hidden;
+    .content {
+        display: block;
+        position: absolute;
+        width: 120%;
+        height: 25px;
+        overflow: hidden;
+        animation: marquee 20s linear infinite;
+    }
+    &.theme-horizontal-bounce {
+        .content {
+            animation: marquee 10s linear infinite alternate;
+        }
+    }
+}
+
+@keyframes marquee {
+    0% { left: 120%; }
+    100% { left: -120%; }
+}
+  
+.marquee:hover .content {
+    animation-play-state: paused;
+}

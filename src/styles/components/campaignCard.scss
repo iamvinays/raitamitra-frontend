@@ -1,5 +1,9 @@
+@import url('//fonts.googleapis.com/css?family=Baloo+Tamma&display=swap'); // font-family: 'Baloo Tamma', cursive;
+@import url('//fonts.googleapis.com/earlyaccess/notosanskannada.css'); // font-family: 'Noto Sans Kannada', sans-serif;
+@import url('//fonts.googleapis.com/earlyaccess/notosanskannadaui.css'); // font-family: 'Noto Sans Kannada UI', sans-serif;
+
 .campaign-card {
-	height: 500px;
+	height: 550px;
 	width: 300px;
 	margin: 0 auto;
 	position: relative;
@@ -72,8 +76,8 @@
 		.top-pic {
 			height: 30%;
 			width: 100%;
-			/*background-image: url(https://unsplash.imgix.net/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=857f07b76abac23a7fb7161cc7b12a46);*/
-			background-size: cover;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
 		}
 		.avatar {
 			width: 80px;
@@ -87,6 +91,8 @@
 			left: 37%;
 			top: 23%;
 			z-index: 1;
+			background-color: #fff;
+			background-repeat: no-repeat;
 		}
 		.info-box {
 			height: 70%;
@@ -108,19 +114,22 @@
 		h2 {
 			color: #fff;
 			margin: 60px 0 0 0;
-			font-size: 20px;
+			font-size: 1rem;
 			text-align: center;
-			line-height: 18px;
+			line-height: 1.3rem;
+			font-family: 'Baloo Tamma', cursive;
 		}
 		.created-by {
 			color: #aaa;
 			display: block;
 			margin: 12px 0 0 0;
+			font-family: 'Noto Sans Kannada', sans-serif;
 		}
 		.intro {
 			color: #fff;
-			font-size: 16px;
+			font-size: 0.9rem;
 			padding: 10px 0 0;
+			font-family: 'Noto Sans Kannada', sans-serif;
 		}
 		.raised {
 			color: #aaa;
@@ -197,5 +206,64 @@
 	}
 }
 .campaign-wrapper {
-    padding: 50px 0;
+	padding: 50px 0;
+    &:hover {
+		.campaign-card {
+			margin-top: -35px;
+			position: relative;
+			&:before {
+				z-index: -1;
+				position: absolute;
+				content: "";
+				bottom: 25px;
+				left: 10px;
+				width: 50%;
+				top: 80%;
+				max-width: 300px;
+				background: #777;
+				-webkit-box-shadow: 0 35px 20px #777;
+				-moz-box-shadow: 0 35px 20px #777;
+				box-shadow: 0 35px 20px #777;
+				-webkit-transform: rotate(-8deg);
+				-moz-transform: rotate(-8deg);
+				-o-transform: rotate(-8deg);
+				-ms-transform: rotate(-8deg);
+				transform: rotate(-8deg);
+			}
+			&:after {
+				z-index: -1;
+				position: absolute;
+				content: "";
+				bottom: 25px;
+				left: 10px;
+				width: 50%;
+				top: 80%;
+				max-width: 300px;
+				background: #777;
+				-webkit-box-shadow: 0 35px 20px #777;
+				-moz-box-shadow: 0 35px 20px #777;
+				box-shadow: 0 35px 20px #777;
+				-webkit-transform: rotate(-8deg);
+				-moz-transform: rotate(-8deg);
+				-o-transform: rotate(-8deg);
+				-ms-transform: rotate(-8deg);
+				transform: rotate(-8deg);
+				-webkit-transform: rotate(8deg);
+				-moz-transform: rotate(8deg);
+				-o-transform: rotate(8deg);
+				-ms-transform: rotate(8deg);
+				transform: rotate(8deg);
+				right: 10px;
+				left: auto;
+			}
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0px;
+			height: 35px;
+			width: 100%;
+		  }
+	}
 }
