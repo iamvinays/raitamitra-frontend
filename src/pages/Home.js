@@ -14,7 +14,7 @@ const sliderSettings = {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     speed: 2000,
     autoplaySpeed: 4000,
     cssEase: "linear",
