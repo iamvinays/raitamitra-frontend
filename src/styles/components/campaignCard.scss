@@ -3,7 +3,7 @@
 @import url('//fonts.googleapis.com/earlyaccess/notosanskannadaui.css'); // font-family: 'Noto Sans Kannada UI', sans-serif;
 
 .campaign-card {
-	height: 550px;
+	height: 710px;
 	width: 300px;
 	margin: 0 auto;
 	position: relative;
@@ -135,6 +135,9 @@
 			color: #aaa;
 			display: block;
 			font-size: 14px;
+			position: absolute;
+			bottom: 90px;
+			width: 100%;
 			strong {
 				color: #56a403;
 				font-size: 26px;
@@ -147,6 +150,9 @@
 			display: block;
 			font-size: 14px;
 			padding: 10px 0;
+			position: absolute;
+			bottom: 10px;
+			width: 100%;
 			strong {
 				color: #00c0bb;
 				font-size: 26px;

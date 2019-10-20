@@ -7,7 +7,7 @@
     .content {
         display: block;
         position: absolute;
-        width: 120%;
+        width: 1875px;
         height: 25px;
         overflow: hidden;
         animation: marquee 20s linear infinite;
@@ -20,8 +20,12 @@
 }
 
 @keyframes marquee {
-    0% { left: 120%; }
-    100% { left: -120%; }
+    0% {
+        left: 120%;
+    }
+    100% {
+        left: -1875px;
+    }
 }
   
 .marquee:hover .content {
