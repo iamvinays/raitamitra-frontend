@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Products = () => (
-    <div className="jumbotron">
-        <h2>Products</h2>
-        <p>This is Products Page</p>
-    </div>
-);
+class Products extends Component {
+    render() {
+        return (
+            <div className="products">
+                <div className="container">
+                    <div className="product-list">
+                        <div className="product-list-item">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+}
 
 export default Products;
