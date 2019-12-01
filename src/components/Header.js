@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import $ from 'jquery'; 
 import '../styles/components/header.scss';
 
@@ -22,10 +22,10 @@ class Header extends Component {
         return (
             <header className="header-fixed">
                 <div className="header-limiter">
-                    <h1><Link to="#">Raita<span>Mitra</span></Link></h1>
+                    <h1><Link to="/">Raita<span>Mitra</span></Link></h1>
                     <nav>
-                        <Link to="#" className="selected">Home</Link>
-                        <Link to="#">Products</Link>
+                        <NavLink exact  to="/" activeClassName="selected">Home</NavLink>
+                        <NavLink exact  to="/products" activeClassName="selected">Products</NavLink>
                     </nav>
                 </div>
             </header>
